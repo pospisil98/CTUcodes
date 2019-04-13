@@ -1,0 +1,135 @@
+\hypertarget{class_app_1_1_presenters_1_1_sign_presenter}{}\section{Sign\+Presenter Class Reference}
+\label{class_app_1_1_presenters_1_1_sign_presenter}\index{Sign\+Presenter@{Sign\+Presenter}}
+Inheritance diagram for Sign\+Presenter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_app_1_1_presenters_1_1_sign_presenter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_presenters_1_1_sign_presenter_a29d4b5fe645c2cef5f995a35d823029f}{\+\_\+\+\_\+construct}} (User\+Manager \$user\+Manager)
+\item 
+\mbox{\hyperlink{class_app_1_1_presenters_1_1_sign_presenter_ab3af58fdd7adf8de36403909fa255979}{action\+Default}} ()
+\item 
+\mbox{\Hypertarget{class_app_1_1_presenters_1_1_sign_presenter_aa330fd9f860dd2ea8be435eb69e706bb}\label{class_app_1_1_presenters_1_1_sign_presenter_aa330fd9f860dd2ea8be435eb69e706bb}} 
+{\bfseries action\+In} ()
+\item 
+\mbox{\Hypertarget{class_app_1_1_presenters_1_1_sign_presenter_a82c9b4a056d9e439f41b5e3b9bd3b286}\label{class_app_1_1_presenters_1_1_sign_presenter_a82c9b4a056d9e439f41b5e3b9bd3b286}} 
+{\bfseries action\+Up} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_presenters_1_1_sign_presenter_aa8143a70f2cd43780e9a2ec146b6b7c9}{action\+Out}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_presenters_1_1_sign_presenter_a3c4ccf80318992a3c1ec5e30784d1b14}{create\+Component\+Sign\+In\+Form}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_presenters_1_1_sign_presenter_aca5b70d50f918f3944592a75fbe4b365}{create\+Component\+Sign\+Up\+Form}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_presenters_1_1_sign_presenter_ab125eb8fde8a0bb557f930e1bbf348d3}{sign\+In\+Form\+Succeeded}} (\$form, \$values)
+\item 
+\mbox{\hyperlink{class_app_1_1_presenters_1_1_sign_presenter_a0703a42cc6f7183e60d908e4e52cb6df}{sign\+Up\+Form\+Succeeded}} (\$form, \$values)
+\item 
+\mbox{\hyperlink{class_app_1_1_presenters_1_1_sign_presenter_aab0bff536238b6c628a58419d1d94d5d}{handle\+Username\+Exists}} (\$username)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_app_1_1_presenters_1_1_sign_presenter_a29d4b5fe645c2cef5f995a35d823029f}\label{class_app_1_1_presenters_1_1_sign_presenter_a29d4b5fe645c2cef5f995a35d823029f}} 
+\index{App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{User\+Manager}]{\$user\+Manager }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_app_1_1_presenters_1_1_sign_presenter}{Sign\+Presenter}} constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+User\+Manager & {\em \$user\+Manager} & Model working with users table \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_app_1_1_presenters_1_1_sign_presenter_ab3af58fdd7adf8de36403909fa255979}\label{class_app_1_1_presenters_1_1_sign_presenter_ab3af58fdd7adf8de36403909fa255979}} 
+\index{App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}!action\+Default@{action\+Default}}
+\index{action\+Default@{action\+Default}!App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}}
+\subsubsection{\texorpdfstring{action\+Default()}{actionDefault()}}
+{\footnotesize\ttfamily action\+Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default sign function -\/ determines where to redirect user. \mbox{\Hypertarget{class_app_1_1_presenters_1_1_sign_presenter_aa8143a70f2cd43780e9a2ec146b6b7c9}\label{class_app_1_1_presenters_1_1_sign_presenter_aa8143a70f2cd43780e9a2ec146b6b7c9}} 
+\index{App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}!action\+Out@{action\+Out}}
+\index{action\+Out@{action\+Out}!App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}}
+\subsubsection{\texorpdfstring{action\+Out()}{actionOut()}}
+{\footnotesize\ttfamily action\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function responsible for signing out the user. \mbox{\Hypertarget{class_app_1_1_presenters_1_1_sign_presenter_a3c4ccf80318992a3c1ec5e30784d1b14}\label{class_app_1_1_presenters_1_1_sign_presenter_a3c4ccf80318992a3c1ec5e30784d1b14}} 
+\index{App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}!create\+Component\+Sign\+In\+Form@{create\+Component\+Sign\+In\+Form}}
+\index{create\+Component\+Sign\+In\+Form@{create\+Component\+Sign\+In\+Form}!App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}}
+\subsubsection{\texorpdfstring{create\+Component\+Sign\+In\+Form()}{createComponentSignInForm()}}
+{\footnotesize\ttfamily create\+Component\+Sign\+In\+Form (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function creating the Sign\+In form.
+
+\begin{DoxyReturn}{Returns}
+Form Sign\+In form with username and password 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_presenters_1_1_sign_presenter_aca5b70d50f918f3944592a75fbe4b365}\label{class_app_1_1_presenters_1_1_sign_presenter_aca5b70d50f918f3944592a75fbe4b365}} 
+\index{App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}!create\+Component\+Sign\+Up\+Form@{create\+Component\+Sign\+Up\+Form}}
+\index{create\+Component\+Sign\+Up\+Form@{create\+Component\+Sign\+Up\+Form}!App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}}
+\subsubsection{\texorpdfstring{create\+Component\+Sign\+Up\+Form()}{createComponentSignUpForm()}}
+{\footnotesize\ttfamily create\+Component\+Sign\+Up\+Form (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function creating the Sign\+Up form.
+
+\begin{DoxyReturn}{Returns}
+Form Sign\+In form with username and password 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_presenters_1_1_sign_presenter_aab0bff536238b6c628a58419d1d94d5d}\label{class_app_1_1_presenters_1_1_sign_presenter_aab0bff536238b6c628a58419d1d94d5d}} 
+\index{App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}!handle\+Username\+Exists@{handle\+Username\+Exists}}
+\index{handle\+Username\+Exists@{handle\+Username\+Exists}!App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}}
+\subsubsection{\texorpdfstring{handle\+Username\+Exists()}{handleUsernameExists()}}
+{\footnotesize\ttfamily handle\+Username\+Exists (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+Function called by A\+J\+AX in sign\+Up form to check existence of given username.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$username} & string Username to check \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_app_1_1_presenters_1_1_sign_presenter_ab125eb8fde8a0bb557f930e1bbf348d3}\label{class_app_1_1_presenters_1_1_sign_presenter_ab125eb8fde8a0bb557f930e1bbf348d3}} 
+\index{App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}!sign\+In\+Form\+Succeeded@{sign\+In\+Form\+Succeeded}}
+\index{sign\+In\+Form\+Succeeded@{sign\+In\+Form\+Succeeded}!App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}}
+\subsubsection{\texorpdfstring{sign\+In\+Form\+Succeeded()}{signInFormSucceeded()}}
+{\footnotesize\ttfamily sign\+In\+Form\+Succeeded (\begin{DoxyParamCaption}\item[{}]{\$form,  }\item[{}]{\$values }\end{DoxyParamCaption})}
+
+Function called after successful sign\+In form submit. It is responsible for loging in the user and handling exceptions connected with it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$form} & Form Sign\+In form \\
+\hline
+{\em \$values} & array Array of values returned by Sign\+In form \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_app_1_1_presenters_1_1_sign_presenter_a0703a42cc6f7183e60d908e4e52cb6df}\label{class_app_1_1_presenters_1_1_sign_presenter_a0703a42cc6f7183e60d908e4e52cb6df}} 
+\index{App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}!sign\+Up\+Form\+Succeeded@{sign\+Up\+Form\+Succeeded}}
+\index{sign\+Up\+Form\+Succeeded@{sign\+Up\+Form\+Succeeded}!App\+::\+Presenters\+::\+Sign\+Presenter@{App\+::\+Presenters\+::\+Sign\+Presenter}}
+\subsubsection{\texorpdfstring{sign\+Up\+Form\+Succeeded()}{signUpFormSucceeded()}}
+{\footnotesize\ttfamily sign\+Up\+Form\+Succeeded (\begin{DoxyParamCaption}\item[{}]{\$form,  }\item[{}]{\$values }\end{DoxyParamCaption})}
+
+Function called after successful sign\+Up form submit. It is responsible for user registration and handling registration exceptions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$form} & Form Sign\+Up form \\
+\hline
+{\em \$values} & array Array of values returned by Sign\+Up form \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sign\+Presenter.\+php\end{DoxyCompactItemize}

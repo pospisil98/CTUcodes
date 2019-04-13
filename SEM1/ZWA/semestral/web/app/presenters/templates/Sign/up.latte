@@ -1,0 +1,52 @@
+{block content}
+<div class="register-wrapper text-center col-md-4 col-md-offset-4">
+    <h1>NOTE.IT</h1>
+
+    <form id="signUpForm" n:name=signUpForm method="post" role="form">
+        <div id="formGroupUsername" class="form-group">
+            <label for="username">Username</label>
+            <input id="username" n:name=username type="text" class="form-control" value="{ifset $username}{$username}{/ifset}" required maxlength="60">
+        </div>
+        <div class="form-group">
+            <label for="password">Heslo</label>
+            <input id="password" n:name=password type="password" class="form-control" required maxlength="60">
+        </div>
+        <div class="form-group">
+            <label for="passwordCheck">Heslo znovu</label>
+            <input id="passwordCheck" n:name=passwordCheck type="password" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <button class="btn center-block" n:name="submit">Zaregistrovat!</button>
+        </div>
+    </form>
+    <div class="text-center">
+        <a class="" n:href="Sign:in">Přihlášení</a>
+    </div>
+
+    <script type="text/javascript">
+
+        $('#username').on('change paste keyup', function() {
+            var nameToTest = $("#username").val();
+            //console.log(nameToTest);
+
+            $.ajax({
+                type: "GET",
+                url: {link usernameExists!},
+                data: { username : nameToTest},
+                cache: false,
+                success: function(payload){
+                    console.log(payload);
+                    var change = $("#formGroupUsername");
+                    if(payload.exists) {
+                        change.removeClass("has-success");
+                        change.addClass("has-error");
+                    } else {
+                        change.removeClass("has-error");
+                        change.addClass("has-success");
+                    }
+                }
+            });
+        });
+    </script>
+</div>
+{/block}

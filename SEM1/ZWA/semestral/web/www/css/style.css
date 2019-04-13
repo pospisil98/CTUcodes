@@ -1,0 +1,107 @@
+.btn-default {
+	background-image: none !important;
+}
+
+.alert {
+	z-index: 999999;
+	position: fixed;
+	width: 40% !important;
+	margin: 0 auto 0 30%  !important;
+	text-align: center;
+}
+
+.alert-wrap {
+	width: 100%;
+}
+
+.navbar-nav {
+	font-size: 1.3em;
+}
+
+/* --------- LOGIN ----------- */
+.login-wrapper {
+}
+
+.login-wrapper input {
+	text-align: center;
+}
+
+/* --------- REGISTER ----------- */
+.register-wrapper {
+}
+
+.register-wrapper input {
+	text-align: center;
+}
+
+/* --------- MAIN ----------- */
+.main-wrapper {
+}
+
+.main-notebooks {
+	border: 1px solid black;
+	padding-bottom: 1em;
+}
+
+.main-notebook-wrap {
+	width: 60%;
+	margin: 2em auto;
+	padding: .5em;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+	transition: 0.3s;
+}
+
+.main-notebook-wrap:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+
+.main-notebook-wrap a {
+	color: inherit;
+	text-decoration: inherit;
+}
+/* ------- NOTEBOOK ------------- */
+.notebook-wrapper{
+}
+
+.note-date {
+	margin-top: -.4em;
+	font-size: 95%;
+}
+
+.notebook-new-button {
+	margin-top: 1em;
+}
+/* ------- NOTE ------------- */
+.note-wrapper {
+	padding-top: 1em;
+	border: 1px solid black;
+	padding-bottom: 1em;
+}
+.note-content {
+	height: 50vh;
+	overflow-y: auto;
+}
+
+.note-settings {
+	margin-top: 2em;
+}
+
+.note-edit-form textarea {
+	resize: none;
+}
+
+.note-edit-form {
+	height: 100%;
+}
+
+@media print {
+	form, button, #myModal {
+		display: none !important;
+	}
+
+	.note-wrapper {
+		border: none;
+	}
+
+}

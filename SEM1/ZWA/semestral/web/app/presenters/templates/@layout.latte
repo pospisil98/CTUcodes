@@ -1,0 +1,68 @@
+{**
+ * @param string   $basePath web base path
+ * @param array    $flashes  flash messages
+ *}
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>NOTE.IT</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{$basePath}/css/style.css">
+	<link rel="stylesheet" href="{$basePath}/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{$basePath}/css/bootstrap-theme.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	{block head}{/block}
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" n:href=Homepage:>NOTE.IT</a>
+		</div>
+		{if $user->loggedIn}
+		<ul class="nav navbar-nav">
+			<li><a n:href=Homepage:>Přehled sešitů</a></li>
+
+
+		{ifset $notebookID}
+			<li><a n:href="Notebook:default $notebookID">Zpět na sešit</a></li>
+		{/ifset}
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a n:href=Sign:Out> Odhlásit se</a></li>
+		</ul>
+		{/if}
+	</div>
+</nav>
+
+	<div class="alert-wrap">
+	<div n:foreach="$flashes as $flash" class="alert alert-{$flash->type} alert-dismissable">
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		{$flash->message}
+	</div></div>
+
+	{include content}
+
+	{block scripts}
+
+	<script src="{$basePath}/js/bootstrap.min.js"></script>
+	<script src="{$basePath}/js/netteForms.js"></script>
+	<script src="{$basePath}/js/main.js"></script>
+
+	{* Block for toggling Bootstrap modals *}
+    {ifset $modalToggle}
+		<script>
+            $({$modalName}).modal('hide');
+		</script>
+    {/ifset}
+
+	{/block}
+</body>
+</html>

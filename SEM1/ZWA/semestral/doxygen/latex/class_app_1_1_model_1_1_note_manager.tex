@@ -1,0 +1,165 @@
+\section{Note\+Manager Class Reference}
+\label{class_app_1_1_model_1_1_note_manager}\index{Note\+Manager@{Note\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ \+\_\+\+\_\+construct} (Nette\textbackslash{}\+Database\textbackslash{}\+Connection \$database)
+\item 
+\textbf{ get\+Note} (\$id)
+\item 
+\textbf{ add\+Note} (\$headline, \$content, \$notebook\+\_\+id)
+\item 
+\textbf{ remove\+Note} (\$id)
+\item 
+\textbf{ edit\+Note} (\$id, \$headline, \$content)
+\item 
+\textbf{ get\+All\+Notebook\+Notes} (\$notebook\+\_\+id, \$limit, \$offset)
+\item 
+\textbf{ check\+Ownership} (\$note\+\_\+id, \$user\+\_\+id)
+\item 
+\textbf{ get\+Notebook\+Id} (\$note\+\_\+id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_app_1_1_model_1_1_note_manager_a940c5cfe096a3f4a27e7ed19cc2449c8}} 
+\index{App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}}
+\subsubsection{\+\_\+\+\_\+construct()}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Nette\textbackslash{}\+Database\textbackslash{}\+Connection}]{\$database }\end{DoxyParamCaption})}
+
+\doxyref{Note\+Manager}{p.}{class_app_1_1_model_1_1_note_manager} constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Nette\textbackslash{}\+Database\textbackslash{}\+Connection & {\em \$database} & Database connection \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_app_1_1_model_1_1_note_manager_a55bcde13c6aa937642671bb24d08d0af}} 
+\index{App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}!add\+Note@{add\+Note}}
+\index{add\+Note@{add\+Note}!App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}}
+\subsubsection{add\+Note()}
+{\footnotesize\ttfamily add\+Note (\begin{DoxyParamCaption}\item[{}]{\$headline,  }\item[{}]{\$content,  }\item[{}]{\$notebook\+\_\+id }\end{DoxyParamCaption})}
+
+Inserts note with given headline and content into notebook.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$headline} & string Headline of note \\
+\hline
+{\em \$content} & string Content of note \\
+\hline
+{\em \$notebook\+\_\+id} & int ID of notebook to be note inserted in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int ID of inserted note 
+\end{DoxyReturn}
+\mbox{\label{class_app_1_1_model_1_1_note_manager_aec246b8f8c018d8fd4780490a7905e7e}} 
+\index{App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}!check\+Ownership@{check\+Ownership}}
+\index{check\+Ownership@{check\+Ownership}!App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}}
+\subsubsection{check\+Ownership()}
+{\footnotesize\ttfamily check\+Ownership (\begin{DoxyParamCaption}\item[{}]{\$note\+\_\+id,  }\item[{}]{\$user\+\_\+id }\end{DoxyParamCaption})}
+
+Checks whether given user owns given note or not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$note\+\_\+id} & int ID of note \\
+\hline
+{\em \$user\+\_\+id} & int ID of user we want to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Boolean whether user is owner of note or not 
+\end{DoxyReturn}
+\mbox{\label{class_app_1_1_model_1_1_note_manager_aec6415c999f88c51c6a49e2cbc1f6638}} 
+\index{App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}!edit\+Note@{edit\+Note}}
+\index{edit\+Note@{edit\+Note}!App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}}
+\subsubsection{edit\+Note()}
+{\footnotesize\ttfamily edit\+Note (\begin{DoxyParamCaption}\item[{}]{\$id,  }\item[{}]{\$headline,  }\item[{}]{\$content }\end{DoxyParamCaption})}
+
+Change notes headline and content.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & int ID of note to be changed \\
+\hline
+{\em \$headline} & string \\
+\hline
+{\em \$content} & string \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_app_1_1_model_1_1_note_manager_af9c897db1872666f698e448cb3a399c7}} 
+\index{App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}!get\+All\+Notebook\+Notes@{get\+All\+Notebook\+Notes}}
+\index{get\+All\+Notebook\+Notes@{get\+All\+Notebook\+Notes}!App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}}
+\subsubsection{get\+All\+Notebook\+Notes()}
+{\footnotesize\ttfamily get\+All\+Notebook\+Notes (\begin{DoxyParamCaption}\item[{}]{\$notebook\+\_\+id,  }\item[{}]{\$limit,  }\item[{}]{\$offset }\end{DoxyParamCaption})}
+
+Returns all notes in given notebook.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$notebook\+\_\+id} & int ID of notebook \\
+\hline
+{\em \$limit} & int Paginator stuff \\
+\hline
+{\em \$offset} & int Paginator stuff \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array All notebook notes 
+\end{DoxyReturn}
+\mbox{\label{class_app_1_1_model_1_1_note_manager_a3093f24954d925eaf4f496fe7d3187ac}} 
+\index{App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}!get\+Note@{get\+Note}}
+\index{get\+Note@{get\+Note}!App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}}
+\subsubsection{get\+Note()}
+{\footnotesize\ttfamily get\+Note (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Returns everything connected with note of given ID.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & int ID of note we want to know \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Everything with note 
+\end{DoxyReturn}
+\mbox{\label{class_app_1_1_model_1_1_note_manager_aaa97bfdf3b87dbd261251e58548f4fd1}} 
+\index{App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}!get\+Notebook\+Id@{get\+Notebook\+Id}}
+\index{get\+Notebook\+Id@{get\+Notebook\+Id}!App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}}
+\subsubsection{get\+Notebook\+Id()}
+{\footnotesize\ttfamily get\+Notebook\+Id (\begin{DoxyParamCaption}\item[{}]{\$note\+\_\+id }\end{DoxyParamCaption})}
+
+Returns notebook\+\_\+id in which is note stored.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$note\+\_\+id} & int ID of note which notebook we want to know \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int ID of notebook 
+\end{DoxyReturn}
+\mbox{\label{class_app_1_1_model_1_1_note_manager_a9ea37184ea63135be576710ae2788d5f}} 
+\index{App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}!remove\+Note@{remove\+Note}}
+\index{remove\+Note@{remove\+Note}!App\+::\+Model\+::\+Note\+Manager@{App\+::\+Model\+::\+Note\+Manager}}
+\subsubsection{remove\+Note()}
+{\footnotesize\ttfamily remove\+Note (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Removes note from database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & int ID of note to be removed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/model/Note\+Manager.\+php\end{DoxyCompactItemize}

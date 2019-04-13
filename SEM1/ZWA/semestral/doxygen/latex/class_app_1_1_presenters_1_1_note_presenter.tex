@@ -1,0 +1,115 @@
+\section{Note\+Presenter Class Reference}
+\label{class_app_1_1_presenters_1_1_note_presenter}\index{Note\+Presenter@{Note\+Presenter}}
+Inheritance diagram for Note\+Presenter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_app_1_1_presenters_1_1_note_presenter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ \+\_\+\+\_\+construct} (\textbf{ Notebook\+Manager} \$notebook\+Manager, \textbf{ Note\+Manager} \$note\+Manager)
+\item 
+\textbf{ action\+Default} (\$id)
+\item 
+\textbf{ render\+Default} (\$id)
+\item 
+\textbf{ action\+Remove} (\$id)
+\item 
+\textbf{ create\+Component\+Note\+Edit\+Form} ()
+\item 
+\textbf{ note\+Edit\+Form\+Succeeded} (\$form, \$values)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_app_1_1_presenters_1_1_note_presenter_abf10af0e00d40379ce44c79183832689}} 
+\index{App\+::\+Presenters\+::\+Note\+Presenter@{App\+::\+Presenters\+::\+Note\+Presenter}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!App\+::\+Presenters\+::\+Note\+Presenter@{App\+::\+Presenters\+::\+Note\+Presenter}}
+\subsubsection{\+\_\+\+\_\+construct()}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\textbf{ Notebook\+Manager}}]{\$notebook\+Manager,  }\item[{\textbf{ Note\+Manager}}]{\$note\+Manager }\end{DoxyParamCaption})}
+
+\doxyref{Note\+Presenter}{p.}{class_app_1_1_presenters_1_1_note_presenter} constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Notebook\+Manager & {\em \$notebook\+Manager} & \doxyref{Model}{p.}{namespace_app_1_1_model} working with notebooks table \\
+\hline
+Note\+Manager & {\em \$note\+Manager} & \doxyref{Model}{p.}{namespace_app_1_1_model} working with notes table \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_app_1_1_presenters_1_1_note_presenter_abc9fade9634c03fc324b4559fbe2abfb}} 
+\index{App\+::\+Presenters\+::\+Note\+Presenter@{App\+::\+Presenters\+::\+Note\+Presenter}!action\+Default@{action\+Default}}
+\index{action\+Default@{action\+Default}!App\+::\+Presenters\+::\+Note\+Presenter@{App\+::\+Presenters\+::\+Note\+Presenter}}
+\subsubsection{action\+Default()}
+{\footnotesize\ttfamily action\+Default (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Performs actions before rendering the note view.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & int ID of note to be displayed \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_app_1_1_presenters_1_1_note_presenter_ab7e4d6093e671c38971e19e7a45f322b}} 
+\index{App\+::\+Presenters\+::\+Note\+Presenter@{App\+::\+Presenters\+::\+Note\+Presenter}!action\+Remove@{action\+Remove}}
+\index{action\+Remove@{action\+Remove}!App\+::\+Presenters\+::\+Note\+Presenter@{App\+::\+Presenters\+::\+Note\+Presenter}}
+\subsubsection{action\+Remove()}
+{\footnotesize\ttfamily action\+Remove (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Action responsible for removing the note from database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & int ID of note to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_app_1_1_presenters_1_1_note_presenter_adbe06f4aac8adda69c1cf4cefcc9c58d}} 
+\index{App\+::\+Presenters\+::\+Note\+Presenter@{App\+::\+Presenters\+::\+Note\+Presenter}!create\+Component\+Note\+Edit\+Form@{create\+Component\+Note\+Edit\+Form}}
+\index{create\+Component\+Note\+Edit\+Form@{create\+Component\+Note\+Edit\+Form}!App\+::\+Presenters\+::\+Note\+Presenter@{App\+::\+Presenters\+::\+Note\+Presenter}}
+\subsubsection{create\+Component\+Note\+Edit\+Form()}
+{\footnotesize\ttfamily create\+Component\+Note\+Edit\+Form (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function creating the Note\+Edit form.
+
+\begin{DoxyReturn}{Returns}
+Form Note\+Edit form with hidden note\+ID, headline and content of note 
+\end{DoxyReturn}
+\mbox{\label{class_app_1_1_presenters_1_1_note_presenter_a31fc3d689c7087bb9650b232ce35cca3}} 
+\index{App\+::\+Presenters\+::\+Note\+Presenter@{App\+::\+Presenters\+::\+Note\+Presenter}!note\+Edit\+Form\+Succeeded@{note\+Edit\+Form\+Succeeded}}
+\index{note\+Edit\+Form\+Succeeded@{note\+Edit\+Form\+Succeeded}!App\+::\+Presenters\+::\+Note\+Presenter@{App\+::\+Presenters\+::\+Note\+Presenter}}
+\subsubsection{note\+Edit\+Form\+Succeeded()}
+{\footnotesize\ttfamily note\+Edit\+Form\+Succeeded (\begin{DoxyParamCaption}\item[{}]{\$form,  }\item[{}]{\$values }\end{DoxyParamCaption})}
+
+Function called after successful note\+Edit submit. It is responsible for performing changes in the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$form} & \\
+\hline
+{\em \$values} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_app_1_1_presenters_1_1_note_presenter_ac57e2ee064c6a891f41051ef6e116c1f}} 
+\index{App\+::\+Presenters\+::\+Note\+Presenter@{App\+::\+Presenters\+::\+Note\+Presenter}!render\+Default@{render\+Default}}
+\index{render\+Default@{render\+Default}!App\+::\+Presenters\+::\+Note\+Presenter@{App\+::\+Presenters\+::\+Note\+Presenter}}
+\subsubsection{render\+Default()}
+{\footnotesize\ttfamily render\+Default (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Renders note view with corresponding note.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & int ID of note to be displayed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/presenters/Note\+Presenter.\+php\end{DoxyCompactItemize}

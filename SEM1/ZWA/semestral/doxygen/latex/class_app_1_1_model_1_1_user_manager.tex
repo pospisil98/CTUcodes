@@ -1,0 +1,108 @@
+\section{User\+Manager Class Reference}
+\label{class_app_1_1_model_1_1_user_manager}\index{User\+Manager@{User\+Manager}}
+Inheritance diagram for User\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_app_1_1_model_1_1_user_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ \+\_\+\+\_\+construct} (Nette\textbackslash{}\+Database\textbackslash{}\+Context \$database)
+\item 
+\textbf{ authenticate} (array \$credentials)
+\item 
+\textbf{ add} (\$username, \$password)
+\item 
+\textbf{ check\+Existance} (\$username)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_app_1_1_model_1_1_user_manager_ada7e57b2275989a5d42f45e675c91ae3}} 
+const {\bfseries T\+A\+B\+L\+E\+\_\+\+N\+A\+ME} = \textquotesingle{}users\textquotesingle{}
+\item 
+\mbox{\label{class_app_1_1_model_1_1_user_manager_a3d4f50a90bbfcbc210fc9eb26b6b60b0}} 
+const {\bfseries C\+O\+L\+U\+M\+N\+\_\+\+ID} = \textquotesingle{}id\textquotesingle{}
+\item 
+\mbox{\label{class_app_1_1_model_1_1_user_manager_a2f8c723275d204cba2809119004fd4ae}} 
+const {\bfseries C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+ME} = \textquotesingle{}username\textquotesingle{}
+\item 
+\mbox{\label{class_app_1_1_model_1_1_user_manager_a6ae78c05b1701d032b3aa58c1807d035}} 
+const {\bfseries C\+O\+L\+U\+M\+N\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+H\+A\+SH} = \textquotesingle{}hash\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+User management. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_app_1_1_model_1_1_user_manager_a8c02ee667b61c52362cff19b0ca05b17}} 
+\index{App\+::\+Model\+::\+User\+Manager@{App\+::\+Model\+::\+User\+Manager}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!App\+::\+Model\+::\+User\+Manager@{App\+::\+Model\+::\+User\+Manager}}
+\subsubsection{\+\_\+\+\_\+construct()}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Nette\textbackslash{}\+Database\textbackslash{}\+Context}]{\$database }\end{DoxyParamCaption})}
+
+\doxyref{User\+Manager}{p.}{class_app_1_1_model_1_1_user_manager} constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Nette\textbackslash{}\+Database\textbackslash{}\+Context & {\em \$database} & Database connection from DI \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_app_1_1_model_1_1_user_manager_ad8d332714c88b71ce5b961dce40cc841}} 
+\index{App\+::\+Model\+::\+User\+Manager@{App\+::\+Model\+::\+User\+Manager}!add@{add}}
+\index{add@{add}!App\+::\+Model\+::\+User\+Manager@{App\+::\+Model\+::\+User\+Manager}}
+\subsubsection{add()}
+{\footnotesize\ttfamily add (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$password }\end{DoxyParamCaption})}
+
+Performs an registration of new user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$username} & string Given username to be added \\
+\hline
+{\em \$password} & string Given password to be hashed and added \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_app_1_1_model_1_1_user_manager_a47dcfcda0fc8cd71d8a24078903cf507}} 
+\index{App\+::\+Model\+::\+User\+Manager@{App\+::\+Model\+::\+User\+Manager}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!App\+::\+Model\+::\+User\+Manager@{App\+::\+Model\+::\+User\+Manager}}
+\subsubsection{authenticate()}
+{\footnotesize\ttfamily authenticate (\begin{DoxyParamCaption}\item[{array}]{\$credentials }\end{DoxyParamCaption})}
+
+Performs an authentication.
+
+\begin{DoxyReturn}{Returns}
+Nette 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nette} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\label{class_app_1_1_model_1_1_user_manager_a25b688f0df401d74b87ceb6cf909abde}} 
+\index{App\+::\+Model\+::\+User\+Manager@{App\+::\+Model\+::\+User\+Manager}!check\+Existance@{check\+Existance}}
+\index{check\+Existance@{check\+Existance}!App\+::\+Model\+::\+User\+Manager@{App\+::\+Model\+::\+User\+Manager}}
+\subsubsection{check\+Existance()}
+{\footnotesize\ttfamily check\+Existance (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+Checks existence of an user in DB.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$username} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/model/User\+Manager.\+php\end{DoxyCompactItemize}

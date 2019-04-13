@@ -1,0 +1,95 @@
+{block content}
+<div class="main-wrapper text-center col-md-6 col-md-offset-3">
+	<h2>Vaše poznámkové sešity</h2>
+
+	<div class="main-notebooks center-block">
+		<button type="button" class="btn btn-default notebook-new-button" data-toggle="modal" data-target="#myModal">Nový sešit</button>
+		<button type="button" class="btn btn-default notebook-new-button" data-toggle="modal" data-target="#myModal1">Rychlá poznámka</button>
+
+        {if !empty($notebooks)}
+		{foreach $notebooks as $notebook}
+		<div class="main-notebook-wrap">
+			<a n:href="Notebook:default $notebook->id">
+				<h3>{$notebook->headline}</h3>
+				<p>{$notebook->description}</p>
+			</a>
+		</div>
+		{/foreach}
+
+		<div class="pagination btn-group">
+            {if !$paginator->isFirst()}
+				<a class="btn btn-default" n:href="default, 1">První</a>
+				<a class="btn btn-default" n:href="default, $paginator->page-1">Předchozí</a>
+            {/if}
+
+			<span class="btn btn-default disabled">Stránka {$paginator->page} z {$paginator->pageCount}</span>
+
+            {if !$paginator->isLast()}
+				<a class="btn btn-default" n:href="default, $paginator->page+1">Další</a>
+				<a class="btn btn-default" n:href="default, $paginator->pageCount">Poslední</a>
+            {/if}
+		</div>
+		{else}
+			<h3>Nemáte zatím žádný sešit, vytvořte si nějaký!</h3>
+        {/if}
+
+		<div id="myModal" class="" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Nový sešit</h4>
+					</div>
+					<div class="modal-body">
+						<form id="notebookAddForm" n:name="notebookAddForm" method="post" class="note-edit-form">
+							<div class="form-group">
+								<label for="headline">Název sešitu</label>
+
+								<input type="text" n:name="headline" class="form-control" id="headline" required maxlength="60" value="{ifset $notebookHeadline}{$notebookHeadline}{/ifset}">
+							</div>
+							<div class="form-group">
+								<label for="description">Stručný popis</label>
+
+								<textarea n:name="description" class="form-control" rows="5" id="description" required maxlength="255">{ifset $description}{$description}{/ifset}</textarea>
+							</div>
+							<div class="form-group">
+								<button class="btn center-block" n:name="submit">Přidat</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="myModal1" class="" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Rychlá poznámka</h4>
+					</div>
+					<div class="modal-body">
+						<form id="quickNoteForm" n:name="quickNoteForm" method="post" class="note-edit-form">
+							<div class="form-group">
+								<label for="headline">Název poznámky</label>
+
+								<input type="text" n:name="headline" class="form-control" id="headline" value="{ifset $headline}{$headline}{/ifset}" required maxlength="60">
+							</div>
+							<div class="form-group">
+								<label for="content">Obsah</label>
+
+								<textarea n:name="content" class="form-control" rows="5" id="content" required maxlength="65535">{ifset $content}{$content}{/ifset}</textarea>
+							</div>
+							<div class="form-group">
+								<button class="btn center-block" n:name="submit">Přidat</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
