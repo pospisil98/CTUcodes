@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="526.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.cvut.fel.pjv.schoolis.controllers.login.LoginController">
+   <children>
+      <AnchorPane prefHeight="160.0" prefWidth="526.0" style="-fx-background-color: #27566B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="121.0" layoutY="107.0" text="Školní informační systém" textFill="WHITE" AnchorPane.leftAnchor="121.0" AnchorPane.topAnchor="107.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="85.0" fitWidth="98.0" layoutX="221.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="221.0" AnchorPane.topAnchor="14.0">
+               <image>
+                  <Image url="@../../icons/schoolWhite.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="173.0" prefHeight="340.0" prefWidth="526.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="160.0">
+         <children>
+            <JFXTextField fx:id="usernameText" alignment="CENTER" focusColor="#27566b" layoutX="158.0" layoutY="65.0" onKeyPressed="#onEnter" prefHeight="31.0" prefWidth="210.0" style="-fx-text-fill: #27566B;" unFocusColor="#27566b" AnchorPane.leftAnchor="158.0" AnchorPane.topAnchor="65.0" />
+            <JFXPasswordField fx:id="passwordText" alignment="CENTER" focusColor="#27566b" layoutX="158.0" layoutY="161.0" onKeyPressed="#onEnter" prefHeight="31.0" prefWidth="210.0" style="-fx-text-fill: #27566B;" unFocusColor="#27566b" AnchorPane.leftAnchor="158.0" AnchorPane.topAnchor="161.0" />
+            <Label layoutX="191.0" layoutY="38.0" text="Uživatelské jméno" textFill="#27566b" AnchorPane.leftAnchor="191.0" AnchorPane.topAnchor="38.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="241.0" layoutY="134.0" text="Heslo" textFill="#27566b" AnchorPane.leftAnchor="241.0" AnchorPane.topAnchor="134.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="loginButton" layoutX="191.0" layoutY="237.0" onAction="#loginButtonClicked" onKeyPressed="#onEnter" text="Přihlásit se" textFill="#27566b" AnchorPane.leftAnchor="191.0" AnchorPane.topAnchor="237.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

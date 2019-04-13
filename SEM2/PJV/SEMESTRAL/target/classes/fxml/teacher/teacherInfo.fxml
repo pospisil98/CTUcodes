@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="569.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.cvut.fel.pjv.schoolis.controllers.teacher.TeacherInfoController">
+   <children>
+      <AnchorPane prefHeight="102.0" prefWidth="395.0" style="-fx-background-color: #27566B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="103.0" layoutY="34.0" text="Osobní údaje" textFill="WHITE" AnchorPane.leftAnchor="103.0" AnchorPane.topAnchor="34.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="21.0">
+               <image>
+                  <Image url="@../../icons/personalinfoWhite.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <JFXButton fx:id="backButton" layoutX="504.0" layoutY="36.0" onAction="#backButtonClicked" text="Zpět" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-2.0" layoutY="102.0" prefHeight="476.0" prefWidth="395.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="102.0">
+         <children>
+            <Label text="Jméno" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Příjmení" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="82.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Titul" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="124.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Ulice" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="166.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Číslo popisné" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="208.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Město" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="250.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="E-mailová adresa" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="292.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Telefonní číslo" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="334.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Třída" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="376.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="phoneLabel" layoutX="316.0" layoutY="334.0" text="Telefonní číslo" textFill="#27566b" AnchorPane.leftAnchor="324.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailLabel" layoutX="305.0" layoutY="292.0" text="E-mailová adresa" textFill="#27566b" AnchorPane.leftAnchor="324.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="cityLabel" layoutX="351.0" layoutY="250.0" text="Město" textFill="#27566b" AnchorPane.leftAnchor="324.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="houseNumberLabel" layoutX="329.0" layoutY="208.0" text="Číslo popisné" textFill="#27566b" AnchorPane.leftAnchor="324.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="streetLabel" layoutX="342.0" layoutY="166.0" text="Ulice" textFill="#27566b" AnchorPane.leftAnchor="324.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="degreeLabel" layoutX="344.0" layoutY="124.0" text="Titul" textFill="#27566b" AnchorPane.leftAnchor="324.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="surnameLabel" layoutX="328.0" layoutY="82.0" text="Příjmení" textFill="#27566b" AnchorPane.leftAnchor="324.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" layoutX="337.0" layoutY="40.0" text="Jméno" textFill="#27566b" AnchorPane.leftAnchor="324.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="414.0" text="Předměty" textFill="#27566b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="classComboBox" layoutX="324.0" layoutY="374.0" prefHeight="31.0" prefWidth="189.0" />
+            <JFXComboBox fx:id="subjectComboBox" layoutX="324.0" layoutY="412.0" prefHeight="31.0" prefWidth="189.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

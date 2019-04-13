@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="839.0" prefWidth="1124.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.cvut.fel.pjv.schoolis.controllers.teacher.TeacherStudentClassificationController">
+   <children>
+      <AnchorPane prefHeight="102.0" prefWidth="395.0" style="-fx-background-color: #27566B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="103.0" layoutY="34.0" text="Klasifikace" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icons/scorecardWhite.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label fx:id="studentLabel" layoutX="238.0" layoutY="34.0" text="Jméno a příjmení studenta" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="579.0" layoutY="34.0" text="Vyučující předmětu:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="teacherName" layoutX="827.0" layoutY="34.0" text="Jméno a příjmení učitele" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-2.0" layoutY="102.0" prefHeight="476.0" prefWidth="395.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="102.0">
+         <children>
+            <SplitPane dividerPositions="0.12244897959183673" layoutX="17.0" layoutY="21.0" orientation="VERTICAL" prefHeight="737.0" prefWidth="1124.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <JFXComboBox fx:id="subjectComboBox" focusColor="#27566b" layoutX="21.0" layoutY="23.0" onAction="#subjectComboBoxClicked" prefHeight="35.0" prefWidth="144.0" promptText="Předmět" unFocusColor="#27566b" AnchorPane.leftAnchor="21.0" />
+                        <JFXButton fx:id="backButton" layoutX="994.0" layoutY="28.0" onAction="#backButtonClicked" text="Zpět" AnchorPane.rightAnchor="14.0" />
+                        <JFXButton fx:id="gradeButton" layoutX="176.0" layoutY="28.0" onAction="#gradeButtonClicked" text="Přidat známku" />
+                        <JFXButton fx:id="removeGradeButton" layoutX="297.0" layoutY="28.0" onAction="#removeGradeButtonClicked" text="Odebrat známku" />
+                        <Label fx:id="meanLabel" layoutX="526.0" layoutY="33.0" text="Průměr známek: " />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <TableView fx:id="classificationTable" layoutX="138.0" layoutY="121.0" prefHeight="641.0" prefWidth="1122.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                          <columns>
+                            <TableColumn fx:id="dateColumn" prefWidth="188.0" text="Datum" />
+                            <TableColumn fx:id="gradeColumn" prefWidth="83.0" text="Známka" />
+                              <TableColumn fx:id="weightColumn" prefWidth="93.0" text="Váha" />
+                              <TableColumn fx:id="descriptionColumn" prefWidth="737.0" text="Popis" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

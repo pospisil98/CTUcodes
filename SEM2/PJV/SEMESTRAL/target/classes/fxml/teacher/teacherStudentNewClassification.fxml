@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="507.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.cvut.fel.pjv.schoolis.controllers.teacher.TeacherStudentNewClassificationController">
+   <children>
+      <AnchorPane prefHeight="102.0" prefWidth="395.0" style="-fx-background-color: #27566B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="21.0">
+               <image>
+                  <Image url="@../../icons/scorecardWhite.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label fx:id="subjectLabel" layoutX="87.0" layoutY="34.0" text="Název předmětu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="backButton" layoutX="442.0" layoutY="38.0" onAction="#backButtonClicked" text="Zpět" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-2.0" layoutY="102.0" prefHeight="476.0" prefWidth="395.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="102.0">
+         <children>
+            <Label layoutX="24.0" layoutY="54.0" text="Známka" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="54.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="96.0" text="Váha" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="96.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="138.0" text="Popis" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="138.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="studentLabel" layoutX="24.0" layoutY="14.0" text="Jméno a příjmení" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="303.0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="gradeTextField" alignment="CENTER" focusColor="#27566b" layoutX="324.0" layoutY="46.0" unFocusColor="#27566b" />
+            <JFXTextField fx:id="weightTextField" alignment="CENTER" focusColor="#27566b" layoutX="324.0" layoutY="88.0" unFocusColor="#27566b" />
+            <JFXTextField fx:id="descriptionTextField" focusColor="#27566b" layoutX="324.0" layoutY="130.0" unFocusColor="#27566b" />
+            <DatePicker fx:id="dateDatePicker" layoutX="324.0" layoutY="180.0" prefHeight="31.0" prefWidth="169.0" />
+            <JFXButton fx:id="addGradeButton" layoutX="378.0" layoutY="240.0" onAction="#addGradeButtonClicked" text="Přidat známku" />
+            <Label layoutX="19.0" layoutY="178.0" text="Datum" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="182.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

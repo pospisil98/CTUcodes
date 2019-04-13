@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (HW2_15.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  HW2_15.cpp
+c:\users\vojcek\desktop\skool\semester_02\psi\hw3\hw2_15\md5\hl_hashwrapper.h(263): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\users\vojcek\desktop\skool\semester_02\psi\hw3\hw2_15\hw2_15.cpp(228): warning C4244: 'argument': conversion from 'double' to 'DWORD', possible loss of data
+c:\users\vojcek\desktop\skool\semester_02\psi\hw3\hw2_15\hw2_15.cpp(280): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(337): note: see declaration of 'strncpy'
+c:\users\vojcek\desktop\skool\semester_02\psi\hw3\hw2_15\hw2_15.cpp(196): warning C4101: 'timeElapsed': unreferenced local variable
+  HW2_15.vcxproj -> C:\Users\Vojcek\Desktop\SKOOL\Semester_02\PSI\HW3\Debug\HW3.exe

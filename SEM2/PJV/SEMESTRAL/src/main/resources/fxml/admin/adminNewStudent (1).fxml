@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="874.0" prefWidth="507.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.cvut.fel.pjv.schoolis.controllers.AdminNewStudentController">
+   <children>
+      <AnchorPane prefHeight="102.0" prefWidth="395.0" style="-fx-background-color: #27566B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="103.0" layoutY="34.0" text="Nový student" textFill="WHITE" AnchorPane.leftAnchor="103.0" AnchorPane.topAnchor="34.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="21.0">
+               <image>
+                  <Image url="@../../icons/studentWhite.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label layoutX="371.0" layoutY="34.0" text="Třída" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-2.0" layoutY="102.0" prefHeight="476.0" prefWidth="395.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="102.0">
+         <children>
+            <SplitPane dividerPositions="0.6285714285714286" layoutX="200.0" layoutY="283.0" orientation="VERTICAL" prefHeight="737.0" prefWidth="477.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="475.0">
+                     <children>
+                        <Label text="Jméno" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="40.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Příjmení" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="82.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Datum narození" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="124.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Rodné číslo" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="166.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Pojišťovna" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="208.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Ulice" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="250.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Číslo popisné" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="292.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Město" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="334.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="E-mailová adresa" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="376.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Telefonní číslo" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="418.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="212.0" layoutY="12.0" text="Student" textFill="#27566b">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField layoutX="322.0" layoutY="38.0" />
+                        <JFXTextField layoutX="322.0" layoutY="80.0" />
+                        <JFXTextField layoutX="322.0" layoutY="122.0" />
+                        <JFXTextField layoutX="322.0" layoutY="164.0" />
+                        <JFXTextField layoutX="322.0" layoutY="206.0" />
+                        <JFXTextField layoutX="322.0" layoutY="416.0" />
+                        <JFXTextField layoutX="322.0" layoutY="374.0" />
+                        <JFXTextField layoutX="322.0" layoutY="332.0" />
+                        <JFXTextField layoutX="322.0" layoutY="290.0" />
+                        <JFXTextField layoutX="322.0" layoutY="248.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="173.0" prefWidth="475.0">
+                     <children>
+                        <Label text="Jméno" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="40.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="51.0" text="Příjmení" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="82.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="88.0" text="E-mailová adresa" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="124.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="130.0" text="Telefonní číslo" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="166.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="160.0" layoutY="12.0" text="Zákonný zástupce" textFill="#27566b">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField layoutX="322.0" layoutY="166.0" />
+                        <JFXTextField layoutX="322.0" layoutY="124.0" />
+                        <JFXTextField layoutX="322.0" layoutY="82.0" />
+                        <JFXTextField layoutX="322.0" layoutY="40.0" />
+                        <JFXButton fx:id="addStudentButton" layoutX="370.0" layoutY="225.0" onAction="#addStudentButtonClicked" text="Přidat studenta" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

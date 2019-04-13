@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="507.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.cvut.fel.pjv.schoolis.controllers.admin.AdminNewClassController">
+   <children>
+      <AnchorPane prefHeight="102.0" prefWidth="395.0" style="-fx-background-color: #27566B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="103.0" layoutY="34.0" text="Nová třída" textFill="WHITE" AnchorPane.leftAnchor="103.0" AnchorPane.topAnchor="34.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="21.0">
+               <image>
+                  <Image url="@../../icons/personalinfoWhite.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <JFXButton fx:id="backButton" layoutX="442.0" layoutY="36.0" onAction="#backButtonClicked" text="Zpět" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-2.0" layoutY="102.0" prefHeight="210.0" prefWidth="507.0" AnchorPane.bottomAnchor="-12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="102.0">
+         <children>
+            <Label text="Název" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Počáteční rok" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="82.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Třídní učitel" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="124.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="229.0" layoutY="8.0" text="Třída" textFill="#27566b">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="nameInput" focusColor="#27566b" layoutX="313.0" layoutY="36.0" unFocusColor="#27566b" />
+            <JFXTextField fx:id="yearInput" focusColor="#27566b" layoutX="313.0" layoutY="80.0" unFocusColor="#27566b" />
+            <JFXComboBox fx:id="teacherComboBox" focusColor="#27566b" layoutX="313.0" layoutY="122.0" prefHeight="31.0" prefWidth="169.0" unFocusColor="#27566b" />
+            <JFXButton fx:id="newClassButton" layoutX="387.0" layoutY="179.0" onAction="#newClassButtonClicked" text="Přidat třídu" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

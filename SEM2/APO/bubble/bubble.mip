@@ -1,0 +1,13 @@
+bubble.s
+C:\Users\Vojcek\Desktop\SKOOL\Semester_02\APO\HW\0_ASSEMBLER\bubble.s\
+Objects\
+0
+1
+minic
+0
+0
+0
+0
+1
+objcopy.exe -O srec bubble.s.out bubble.s.srec
+80020000 start

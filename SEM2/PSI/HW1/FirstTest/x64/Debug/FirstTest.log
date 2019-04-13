@@ -1,0 +1,7 @@
+﻿  FirstTest.cpp
+c:\users\vojcek\desktop\skool\semester_02\psi\hw1\firsttest\firsttest.cpp(84): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\vojcek\desktop\skool\semester_02\psi\hw1\firsttest\firsttest.cpp(92): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 2 has type '::size_t'
+  c:\users\vojcek\desktop\skool\semester_02\psi\hw1\firsttest\firsttest.cpp(92): note: consider using '%zi' in the format string
+c:\users\vojcek\desktop\skool\semester_02\psi\hw1\firsttest\firsttest.cpp(100): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 1 has type '::size_t'
+  c:\users\vojcek\desktop\skool\semester_02\psi\hw1\firsttest\firsttest.cpp(100): note: consider using '%zi' in the format string
+  FirstTest.vcxproj -> C:\Users\Vojcek\Desktop\SKOOL\Semester_02\PSI\HW1\x64\Debug\FirstTest.exe

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="689.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.cvut.fel.pjv.schoolis.controllers.admin.AdminSubjectInfoController">
+   <children>
+      <AnchorPane prefHeight="102.0" prefWidth="395.0" style="-fx-background-color: #27566B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="103.0" layoutY="34.0" text="Info o předmětu" textFill="WHITE" AnchorPane.leftAnchor="103.0" AnchorPane.topAnchor="34.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="21.0">
+               <image>
+                  <Image url="@../../icons/personalinfoWhite.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <JFXButton fx:id="backButton" layoutX="624.0" layoutY="36.0" onAction="#backButtonClicked" text="Zpět" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-2.0" layoutY="102.0" prefHeight="220.0" prefWidth="507.0" AnchorPane.bottomAnchor="-14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="102.0">
+         <children>
+            <Label text="Jméno" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Zkratka" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="82.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Učitel" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="124.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Třída" textFill="#27566b" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="166.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="192.0" layoutY="8.0" text="Předmět" textFill="#27566b">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" layoutX="340.0" layoutY="40.0" text="Jméno" textFill="#27566b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="abbreviationLabel" layoutX="340.0" layoutY="82.0" text="Zkratka" textFill="#27566b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="teacherLabel" layoutX="338.0" layoutY="124.0" text="Učitel" textFill="#27566b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="deleteButton" layoutX="502.0" layoutY="122.0" onAction="#deleteButtonClicked" text="Smazat celý předmět" />
+            <JFXComboBox fx:id="classComboBox" layoutX="338.0" layoutY="164.0" prefHeight="31.0" prefWidth="118.0" />
+            <JFXComboBox fx:id="classesComboBox" layoutX="338.0" layoutY="211.0" prefHeight="31.0" prefWidth="118.0" />
+            <JFXButton fx:id="addClassButton" layoutX="494.0" layoutY="208.0" onAction="#addClassButtonClicked" text="Přidat předmět do třídy" />
+            <JFXButton fx:id="removeClassButton" layoutX="480.0" layoutY="164.0" onAction="#removeClassButtonClicked" prefHeight="31.0" prefWidth="203.0" text="Odebrat předmět ze třídy" />
+            <Label layoutX="24.0" layoutY="213.0" text="Seznam všech tříd" textFill="#27566b" AnchorPane.topAnchor="210.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

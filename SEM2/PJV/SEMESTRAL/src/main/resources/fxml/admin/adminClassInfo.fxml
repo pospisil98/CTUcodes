@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="561.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.cvut.fel.pjv.schoolis.controllers.admin.AdminClassInfoController">
+   <children>
+      <AnchorPane prefHeight="102.0" prefWidth="395.0" style="-fx-background-color: #27566B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="103.0" layoutY="34.0" text="Informace o třídě" textFill="WHITE" AnchorPane.leftAnchor="103.0" AnchorPane.topAnchor="34.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="21.0">
+               <image>
+                  <Image url="@../../icons/classWhite.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <JFXButton fx:id="backButton" layoutX="496.0" layoutY="36.0" onAction="#backButtonClicked" text="Zpět" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-2.0" layoutY="102.0" prefHeight="476.0" prefWidth="395.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="102.0">
+         <children>
+            <Label fx:id="classNameLabel" layoutX="25.0" layoutY="46.0" text="Název" textFill="#27566b" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="46.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="yearLabel" layoutX="26.0" layoutY="82.0" text="Počáteční rok" textFill="#27566b" AnchorPane.leftAnchor="26.0" AnchorPane.topAnchor="82.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="teacherLabel" layoutX="335.0" layoutY="8.0" text="Třídní učitel" textFill="#27566b" AnchorPane.leftAnchor="335.0" AnchorPane.topAnchor="8.0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="8.0" text="Třída" textFill="#27566b">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" layoutX="335.0" layoutY="82.0" text="Jméno" textFill="#27566b" AnchorPane.leftAnchor="335.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="surnameLabel" layoutX="335.0" layoutY="120.0" text="Příjmení" textFill="#27566b" AnchorPane.leftAnchor="335.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="degreeLabel" layoutX="335.0" layoutY="46.0" text="Titul" textFill="#27566b" AnchorPane.leftAnchor="335.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="newStudentButton" layoutX="188.0" layoutY="177.0" onAction="#newStudentButtonClicked" text="Přidat studenta" />
+            <JFXComboBox fx:id="studentComboBox" focusColor="#27566b" layoutX="26.0" layoutY="132.0" promptText="Student" unFocusColor="#27566b" />
+            <JFXButton fx:id="infoStudentButton" layoutX="14.0" layoutY="177.0" onAction="#infoStudentButtonClicked" text="Informace o studentovi" />
+            <JFXButton fx:id="deleteButton" layoutX="443.0" layoutY="177.0" onAction="#deleteButtonClicked" text="Smazat třídu" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
